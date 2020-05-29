@@ -3,10 +3,13 @@ var receita = {
     porcoes: 2,
     ingredientes: ["cacau", "leite", "manteiga"]
 
-}
+};
+
+console.log(receita.titulo);
+console.log(receita.porcoes);
 
 for (i = 0; i < receita.ingredientes.length; i++) {
-    console.log(ingredientes[i])
+    console.log(receita.ingredientes[i]);
 }
 
 let livros = [{
@@ -36,13 +39,15 @@ let livros = [{
 
 
 for (i = 0; i < livros.length; i++) {
-    console.log(livros.titulo);
-    console.log(livros.autor);
-    if (livros.livrolido == true) {
+    console.log(livros[i].titulo);
+    console.log(livros[i].autor);
+    if (livros[i].livrolido == true) {
         console.log("Você já leu este livro");
 
     } else
 
-        return "Você ainda não leu este livro";
+        console.log("Você ainda não leu este livro");
+
+
 
 }
