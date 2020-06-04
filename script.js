@@ -37,7 +37,6 @@ let livros = [{
     }
 ]
 
-
 for (i = 0; i < livros.length; i++) {
     console.log(livros[i].titulo);
     console.log(livros[i].autor);
@@ -45,9 +44,6 @@ for (i = 0; i < livros.length; i++) {
         console.log("Você já leu este livro");
 
     } else
-
         console.log("Você ainda não leu este livro");
-
-
 
 }
