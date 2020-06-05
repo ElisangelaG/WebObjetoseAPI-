@@ -10,7 +10,6 @@ window.onload = function pegarDados() {
             data => {
                 data.forEach(pessoa => {
                     let linha = tabela.insertRow(-1);
-
                     let codigo = linha.insertCell(0);
                     let autor = linha.insertCell(1);
                     let foto = linha.insertCell(2);
