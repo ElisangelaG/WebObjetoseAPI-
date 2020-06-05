@@ -4,12 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula Web Objetos e Api - Ex 8 e 9</title>
+    <title>Aula Web Objetos e Api </title>
     <script src="script3.js"></script>
-
     <style>
+        #tabela {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        #tabela td,
+        #tabela th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #tabela tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #tabela tr:hover {
+            background-color: #ddd;
+        }
+        
+        #tabela th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: rgb(0, 0, 205);
+            color: white;
+        }
+        
+        h1 {
+            color: white;
+            font-family: verdana;
+            font-size: 200%;
+            text-align: center
+        }
+        
         body {
-            background-color: #FFE4E1;
+            background-image: url("https://thumbs.gfycat.com/MemorableAltruisticHake-size_restricted.gif");
+            width: 100%;
         }
     </style>
 </head>
@@ -18,13 +54,16 @@
     <h1>Aula Web Objetos e Api </h1>
     <main>
         <article>
-
-            <section id="fotos">
-
+            <section>
+                <table id="tabela">
+                    <tr>
+                        <th>Código</th>
+                        <th>Autor</th>
+                        <th>Foto URL</th>
+                    </tr>
+                </table>
             </section>
-
         </article>
-
     </main>
 </body>
 

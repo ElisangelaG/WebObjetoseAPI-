@@ -1,19 +1,26 @@
 window.onload = function pegarDados() {
 
-    let fotos = document.getElementById("fotos");
+    let tabela = document.getElementById("tabela");
 
-
-    fetch('https://picsum.photos/v2/list?page=2&limit=10')
+    fetch('https://picsum.photos/v2/list?page=2&limit=20')
         .then(
             response => response.json()
         )
+        .then(
+            data => {
+                data.forEach(pessoa => {
+                    let linha = tabela.insertRow(-1);
+                    // <th>Nome</th> <th>Telefone</th>
+                    let codigo = linha.insertCell(0);
+                    let autor = linha.insertCell(1);
+                    let foto = linha.insertCell(2);
+                    codigo.innerHTML = pessoa.id;
+                    autor.innerHTML = pessoa.author;
+                    foto.innerHTML = pessoa.download_url;
 
-    .then(
-        data => {
-            for (i = 0; i < data.length; i++) {
-                fotos.innerHTML = fotos.innerHTML +
-                    "<h1>" + data[i].id + "</h1><p>" + data[i].author + "</p>" + data[i].download_url + "</p>";
+                })
+
+
             }
-        }
-    )
+        )
 }
